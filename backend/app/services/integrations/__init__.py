@@ -1,0 +1,2 @@
+"""External/local integration adapters."""
+
