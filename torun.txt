@@ -1,0 +1,33 @@
+How to run JARVIS
+
+From the repo root:
+
+1. Copy the environment file:
+cp .env.example .env
+
+2. Add your OpenRouter API key to .env:
+OPENROUTER_API_KEY=your_key_here
+
+3. Install dependencies:
+./scripts/bootstrap.sh
+
+4. Start the app:
+./scripts/dev.sh
+
+Open:
+- Frontend: http://localhost:5173
+- Backend docs: http://localhost:8000/docs
+
+Docker option:
+
+1. Copy the environment file:
+cp .env.example .env
+
+2. Add your OpenRouter API key to .env
+
+3. Start with Docker:
+docker compose up --build
+
+Notes:
+- scripts/bootstrap.sh installs Python packages into your active Python environment.
+- In this checkout, backend/.venv is stale, so creating a fresh virtual environment is safer if you want a clean local setup.
